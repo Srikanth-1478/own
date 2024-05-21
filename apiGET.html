@@ -73,14 +73,14 @@ async function getText(file) {
 <br><br>
  <br>
 
-<p>  we fetched data from api [https://reqres.in/api/unknown] </p>
+<p>  we fetched data from api [https://web3.santabrowser.com/api/v1.1/stats/dapps] </p>
 <p id="demo2">Fetch a file to change this text.</p>
 
 <script>
 getText("fetch_info.txt");
 
 async function getText(file) {
-  let myObject = await fetch("https://reqres.in/api/unknown");
+  let myObject = await fetch("https://web3.santabrowser.com/api/v1.1/stats/dapps");
   let myText = await myObject.text();
   document.getElementById("demo2").innerHTML = myText;
 }
