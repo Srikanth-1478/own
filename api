@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<title>API Page Title = TAB NAME </title>
+</head>
+
+
+
+<body>
+<p>my paragraph with P tag </p>
+
+<h1>This is a header h1  with H tag </h1>
+<h2>This is a header h2 </h2>
+<h3>This is a header h3 </h3>
+<h4>This is a header h4 </h4>
+<h5>This is a header h5 </h5>
+<h6>This is a header h6 </h6>
+<h7>This is a header h7 </h7>
+ 
+
+<h7>This is< BR >TAG for next line  </h7>
+
+<p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
+
+<button>Click Me</button>  <br>
+ 
+<a href="https://www.youtube.com">This is a link of youtube</a>  <br>
+ 
+
+
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+fetch('https://api.agify.io/?name=srikanth')
+
+
+<p id="demo">Fetch a file to change this text.</p>
+
+<script>
+getText("fetch_info.txt");
+
+async function getText(file) {
+  let myObject = await fetch("https://reqres.in/api/unknown");
+  let myText = await myObject.text();
+  document.getElementById("demo").innerHTML = myText;
+}
+</script></body>
+
+
+
+
+</html>
+
